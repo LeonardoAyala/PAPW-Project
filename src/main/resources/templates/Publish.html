@@ -160,7 +160,7 @@
                                         </div>
 
                                         <form action="#" th:action="@{/setUser}"        
-                                        th:object="${articulo}" method="post"> 
+                                        th:object="${articulo}" th:object="${articuloHolder}"  method="post"> 
                                             <div class="col-xl">
                                                 <p>Name:</p>
                                                 <input id="writeComment" th:field="*{nombre_articulo}" type="text" name="writeCom" placeholder="Add name." />
